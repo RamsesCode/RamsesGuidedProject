@@ -16,7 +16,10 @@ decimal sophiaScore;   //must stay
 
 sophiaScore = (decimal)sophiaSum / currentAssignments; // keep for now to use in foreach statements 
 
-
+                foreach(int score in sophiaScores){
+                    //We will add the exam scores
+                    sophiaSum += score;
+};
 
 Console.WriteLine("Student\t\tGrade\n");
 
