@@ -12,13 +12,6 @@ int [] loganScores = new int [] {90, 95, 87, 88, 96};
 
 
 
-
-
-sophiaScore = (decimal)sophiaSum / currentAssignments;
-andrewScore = (decimal)andrewSum / currentAssignments;
-emmaScore = (decimal)emmaSum / currentAssignments;
-loganScore = (decimal)loganSum / currentAssignments;
-
 Console.WriteLine("Student\t\tGrade\n");
 Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
 Console.WriteLine("Andrew:\t\t" + andrewScore + "\tB+");
