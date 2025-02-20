@@ -12,3 +12,4 @@
 /Users/ramses/Documents/Spring 2025 Classes/CSC 350H/GuidedProject/Starter/obj/Debug/net8.0/Starter.pdb
 /Users/ramses/Documents/Spring 2025 Classes/CSC 350H/GuidedProject/Starter/obj/Debug/net8.0/Starter.genruntimeconfig.cache
 /Users/ramses/Documents/Spring 2025 Classes/CSC 350H/GuidedProject/Starter/obj/Debug/net8.0/ref/Starter.dll
+/Users/ramses/Documents/Spring 2025 Classes/CSC 350H/GuidedProject/Starter/obj/Debug/net8.0/Starter.sourcelink.json
