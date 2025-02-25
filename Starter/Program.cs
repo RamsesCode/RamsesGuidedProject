@@ -8,29 +8,43 @@ int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
 
 string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };    //Student Names
 
+int [] studentScores = new int [10];
+
+
+
 foreach (string name in studentNames)
 {
-    if (name == "Sophia")
-    {
+    string currentStudent = name;
+    if (currentStudent == "Sophia")
+      studentScores = sophiaScores;
 
-    int sophiaSum = 0;    // readded this, wasnt supposed to be deleted 
+      else if (currentStudent == "Andrew")
+      studentScores = andrewScores;
 
-    decimal sophiaScore;   //must stay 
+      else if (currentStudent == "Emma")
+      studentScores = emmaScores;
 
-    foreach (int score in sophiaScores)
+      else if (currentStudent == "Logan")
+      studentScores = loganScores;
+    
+
+    int sumAssignmentScore = 0;    // readded this, wasnt supposed to be deleted 
+
+    decimal currentStudentGrade = 0;   //must stay 
+
+    foreach (int score in studentScores)
     {
         //We will add the exam scores
-        sophiaSum += score;
+        sumAssignmentScore += score;
     }
 
-    sophiaScore = (decimal)sophiaSum / currentAssignments; // keep for now to use in foreach statements 
+    currentStudentGrade = (decimal)(sumAssignmentScore) / currentAssignments; // keep for now to use in foreach statements 
 
 
     Console.WriteLine("Student\t\tGrade\n");
 
-    Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
-    }
 
+    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t?");
 }
 
 
