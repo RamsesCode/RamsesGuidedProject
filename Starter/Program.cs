@@ -47,7 +47,7 @@ foreach (string name in studentNames)
 
     else if (currentStudent == "Gregor")
         studentScores = gregorScores;
-        
+
     else
         continue;
 
@@ -126,3 +126,6 @@ foreach (string name in studentNames)
 
 Console.WriteLine("Press the Enter key to continue");
 Console.ReadLine();
+
+
+// Guided Project is now finished
