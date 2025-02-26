@@ -5,8 +5,13 @@ int[] sophiaScores = new int[] { 90, 86, 87, 98, 100, 94, 90 };
 int[] andrewScores = new int[] { 92, 89, 81, 96, 90, 89 };
 int[] emmaScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
 int[] loganScores = new int[] { 90, 95, 87, 88, 96, 96 };
+int[] beckyScores = new int[] { 92, 91, 90, 91, 92, 92, 92 };
+int[] chrisScores = new int[] { 84, 86, 88, 90, 92, 94, 96, 98 };
+int[] ericScores = new int[] { 80, 90, 100, 80, 90, 100, 80, 90 };
+int[] gregorScores = new int[] { 91, 91, 91, 91, 91, 91, 91 };
 
-string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan" };    //Student Names
+// Student names
+string[] studentNames = new string[] { "Sophia", "Andrew", "Emma", "Logan", "Becky", "Chris", "Eric", "Gregor" };
 
 int[] studentScores = new int[10];
 
@@ -31,6 +36,21 @@ foreach (string name in studentNames)
     else if (currentStudent == "Logan")
         studentScores = loganScores;
 
+    else if (currentStudent == "Becky")
+        studentScores = beckyScores;
+
+    else if (currentStudent == "Chris")
+        studentScores = chrisScores;
+
+    else if (currentStudent == "Eric")
+        studentScores = ericScores;
+
+    else if (currentStudent == "Gregor")
+        studentScores = gregorScores;
+        
+    else
+        continue;
+
 
     int sumAssignmentScores = 0;    // readded this, wasnt supposed to be deleted 
 
@@ -42,59 +62,59 @@ foreach (string name in studentNames)
 
     foreach (int score in studentScores)
     {
-           // increment the assignment counter
+        // increment the assignment counter
         gradedAssignments += 1;
 
         if (gradedAssignments <= examAssignments)
             // add the exam score to the sum
-            sumAssignmentScores += score; 
+            sumAssignmentScores += score;
 
-     else  // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-        sumAssignmentScores += score / 10;
+        else  // add the extra credit points to the sum - bonus points equal to 10% of an exam score
+            sumAssignmentScores += score / 10;
     }
 
     currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments; // keep for now to use in foreach statements 
 
-    if(currentStudentGrade >= 97)
+    if (currentStudentGrade >= 97)
         currentStudentLetterGrade = "A+";
 
-        else if (currentStudentGrade >= 93)
+    else if (currentStudentGrade >= 93)
         currentStudentLetterGrade = "A";
 
-        else if (currentStudentGrade >= 90)
+    else if (currentStudentGrade >= 90)
         currentStudentLetterGrade = "A-";
 
-        else if (currentStudentGrade >= 87)
+    else if (currentStudentGrade >= 87)
         currentStudentLetterGrade = "B+";
 
-        else if (currentStudentGrade >= 83)
+    else if (currentStudentGrade >= 83)
         currentStudentLetterGrade = "B";
 
-        else if (currentStudentGrade >= 80)
+    else if (currentStudentGrade >= 80)
         currentStudentLetterGrade = "B-";
 
-        else if (currentStudentGrade >= 77)
+    else if (currentStudentGrade >= 77)
         currentStudentLetterGrade = "C+";
 
-        else if (currentStudentGrade >= 73)
+    else if (currentStudentGrade >= 73)
         currentStudentLetterGrade = "C";
 
-        else if (currentStudentGrade >= 70)
+    else if (currentStudentGrade >= 70)
         currentStudentLetterGrade = "C-";
 
-        else if (currentStudentGrade >= 67)
+    else if (currentStudentGrade >= 67)
         currentStudentLetterGrade = "D+";
 
-        else if (currentStudentGrade >= 63)
+    else if (currentStudentGrade >= 63)
         currentStudentLetterGrade = "D";
 
-        else if (currentStudentGrade >= 60)
+    else if (currentStudentGrade >= 60)
         currentStudentLetterGrade = "D-";
 
-        else 
+    else
         currentStudentLetterGrade = "F";
 
-    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");  
+    Console.WriteLine($"{currentStudent}\t\t{currentStudentGrade}\t{currentStudentLetterGrade}");
     //added so this can also print the letter grade
 }
 
